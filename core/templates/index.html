@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Hero Area Start -->
+        {% include 'hero.html' %}
+    <!-- Hero Area End -->
+
+    <!-- Services Section Start -->
+        {% include 'servicos.html' %}
+    <!-- Services Section End -->
+
+    <!-- About Section start -->
+        {% include 'sobre.html' %}
+    <!-- About Section End -->
+
+    <!-- Features Section Start -->
+        {% include 'features.html'%}
+    <!-- Features Section End -->   
+
+    <!-- Team Section Start -->
+        {% include 'equipe.html' %}
+    <!-- Team Section End -->
+
+    <!-- Pricing section Start --> 
+        {% include 'precos.html' %}
+    <!-- Pricing Table Section End -->
+  
+    <!-- Testimonial Section Start -->
+        {% include 'clientes.html' %}
+    <!-- Testimonial Section End -->
+
+    <!-- Call To Action Section Start -->
+        {% include 'chamada.html' %}
+    <!-- Call To Action Section end -->
+
+    <!-- Contact Section Start -->
+        {% include 'contato.html' %}
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+          {% include 'footer.html' %}
+    <!-- Footer Section End -->
+
+    {% endblock %}
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-arrow-up"></i>
+    </a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery-min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/jquery.nav.js' %}"></script>
+    <script src="{% static 'js/scrolling-nav.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/form-validator.min.js' %}"></script>
+    <script src="{% static 'js/contact-form-script.min.js' %}"></script>
+      
+  </body>
+</html>
